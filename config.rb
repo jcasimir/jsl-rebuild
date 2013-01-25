@@ -54,7 +54,7 @@ end
 # page "/this-page-has-no-template.html", :proxy => "/template-file.html" do
 #   @which_fake_page = "Rendering a fake page with a variable"
 # end
-# 
+#
 page "robots.txt", layout: false
 page "humans.txt", layout: false
 
@@ -62,6 +62,9 @@ page "humans.txt", layout: false
 ###
 # Helpers
 ###
+
+activate :data_models
+
 
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
