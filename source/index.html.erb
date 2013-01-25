@@ -67,64 +67,20 @@
 
     <div class="events">
       <h2>Upcoming Events</h2>
-      <ul class="pill-selector">
-        <li class="active"><a href="#">All</a></li>
-        <li><a href="#">Our Classes</a></li>
-        <li><a href="#">Conferences</a></li>
-      </ul>
-      <ul class="events-list">
-        <li class="vevent">
-          <div class="img">
-            <img src="/images/event-rubyconf.png" alt="Rubyconf 2012" width="94" height="50">
-          </div>
-          <div>
-            <h3><a href="/">Denver Rubyconf 2012</a></h3>
-            <p class="location"><a href="/">Grand Hyatt Denver</a></p>
-            <p class="details">November 1-3 - Denver, CO</p>
-          </div>
-        </li>
-        <li class="vevent">
-          <div class="img">
-            <img src="/images/event-rubyconf-arg.png" alt="Rubyconf Argentina" width="101" height="40">
-          </div>
-          <div>
-            <h3><a href="/">RubyConf Argentina 2012</a></h3>
-            <p class="location"><a href="/">Paseo La Plaza</a></p>
-            <p class="details">October 19-20 - Buenos Aires, Argentina</p>
-          </div>
-        </li>
-        <li class="vevent">
-          <div class="img">
-            <img src="/images/event-rubydccamp.png" alt="Ruby DC Camp" width="40" height="65">
-          </div>
-          <div>
-            <h3><a href="/">Ruby DCamp 2012</a></h3>
-            <p class="location"><a href="/">Prince William National Forest Park</a></p>
-            <p class="details">September 28-30 - Triangle, VA</p>
-          </div>
-        </li>
-        <li class="vevent">
-          <div class="img">
-            <img src="/images/event-aloharuby.png" alt="Aloha Ruby" width="101" height="35">
-          </div>
-          <div>
-            <h3><a href="/">Aloha Ruby 2012</a></h3>
-            <p class="location">Aloha Ruby 2012</p>
-            <p class="details">October 6-9 - Honolulu, HI</p>
-          </div>
-        </li>
-        <li class="vevent">
-          <div class="img">
-            <img src="/images/event-jumpstart.png" alt="Jumpstart Event" width="66" height="73">
-          </div>
-          <div>
-            <h3><a href="/">Introduction to Ruby & Rails</a></h3>
-            <p class="location">LARubyConf 2012</p>
-            <p class="details">February 2 - Burbank, CA</p>
-            <p class="tickets"><span><a href="/">Buy tickets &rsaquo;</a></span></p>
-          </div>
-        </li>
-      </ul>
+
+        <ul class="pill-selector">
+          <li class="active"><a href="#">All</a></li>
+          <li><a href="#">Our Classes</a></li>
+          <li><a href="#">Conferences</a></li>
+        </ul>
+
+        <% Event.all.each do |event| %>
+          <ul class="events-list">
+            <li class="vevent">
+              <%= partial :event, locals: { event: event } %>
+            </li>
+          </ul>
+      <% end %>
     </div>
 
     <div class="customers">
@@ -139,5 +95,5 @@
       <p class="nav-right ss-icon"><a href="/">Navigateright</a></p>
     </div>
   </div>
-  
+
   <%= partial :footer %>
