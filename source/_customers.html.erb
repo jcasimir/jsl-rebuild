@@ -1,0 +1,11 @@
+<div class="customers">
+  <p class="nav-left ss-icon"><a href="/">Navigateleft</a></p>
+  <ul>
+    <% Customer.all.each do |customer| %>
+      <li>
+        <%= image_tag customer.image_url, alt: customer.organization %>
+      </li>
+    <% end %>
+  </ul>
+  <p class="nav-right ss-icon"><a href="/">Navigateright</a></p>
+</div>

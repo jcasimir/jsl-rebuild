@@ -32,68 +32,15 @@
 <div id="main">
 
   <div class="wrapper">
-    <div class="testimonials">
-      <div class="quote">
-        <img src="/images/photo-chad-fowler.jpg" alt="Chad Fowler">
-        <blockquote>
-          <p>”Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.”</p>
-          <span>— Chad Fowler, <a href="http://www.livingsocial.com/">LivingSocial</a></span>
-        </blockquote>
-      </div>
 
-      <div class="quote last">
-        <img src="/images/photo-tom-preston-werner.jpg" alt="Tom Preston Werner">
-        <blockquote>
-          <p>”A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences.”</p>
-          <span>— Tom Preston-Werner, <a href="http://www.github.com/">GitHub</a></span>
-        </blockquote>
-      </div>
-    </div>
+    <%= partial :testimonials %>
 
-    <div class="news">
-      <h2>News</h2>
-      <h3><a href="/">Madison Ruby 2012 Panel: Teaching Rails</a></h3>
-      <img src="/images/teaching-rails.png" alt="Teaching Rails" width="224" height="150">
-      <p>Madison Ruby 2012 Panel Discussion including Chad Pytel, Jeff Casimir, Jeff Cohen, and Stephen Anderson. <a href="/">Read more&nbsp;»</a></p>
-      <p class="time-stamp ss-video">August 25, 2012</p>
-      <ul>
-        <li><h3><a href="/" class="ss-video">Anti-Oppression 101</a> <span class="time-stamp">Aug 24</span></h3></li>
-        <li><h3><a href="/" class="ss-file">Hungry Academy: Full of Lessons</a> <span class="time-stamp">June 23</span></h3></li>
-        <li><h3><a href="/" class="ss-file">Designing Hypermedia APIs</a> <span class="time-stamp">April 23</span></h3></li>
-        <li><h3><a href="/" class="ss-video">"Ruby can't scale." O RLY?</a> <span class="time-stamp">Feb 05</span></h3></li>
-      </ul>
-      <p><a href="#">View all posts&nbsp;»</a></p>
-    </div>
+    <%= partial :news %>
 
-    <div class="events">
-      <h2>Upcoming Events</h2>
+    <%= partial :events %>
 
-        <ul class="pill-selector">
-          <li class="active"><a href="#">All</a></li>
-          <li><a href="#">Our Classes</a></li>
-          <li><a href="#">Conferences</a></li>
-        </ul>
+    <%= partial :customers %>
 
-        <% Event.all.each do |event| %>
-          <ul class="events-list">
-            <li class="vevent">
-              <%= partial :event, locals: { event: event } %>
-            </li>
-          </ul>
-      <% end %>
-    </div>
-
-    <div class="customers">
-      <p class="nav-left ss-icon"><a href="/">Navigateleft</a></p>
-      <ul>
-        <li><img src="/images/customer-livingsocial.png" alt="Living Social" width="125" height="46"></li>
-        <li><img src="/images/customer-nasa.png" alt="NASA" width="67" height="57"></li>
-        <li><img src="/images/customer-boeing.png" alt="Boeing" width="167" height="37"></li>
-        <li><img src="/images/customer-sony.png" alt="Sony Computer Entertainment" width="55" height="76"></li>
-        <li><img src="/images/customer-accenture.png" alt="Accenture" width="123" height="35"></li>
-      </ul>
-      <p class="nav-right ss-icon"><a href="/">Navigateright</a></p>
-    </div>
   </div>
 
   <%= partial :footer %>
