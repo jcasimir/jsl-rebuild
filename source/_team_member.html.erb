@@ -1,0 +1,18 @@
+<li id="<%= member.nickname %>">
+  <h2><%= member.name %></h2>
+  <div class="headshot">
+    <%= image_tag member.image_url, alt: member.name %>
+    <ul>
+      <li class="ss-twitter ss-social">
+        <a href="#"><%= member.twitter %></a>
+      </li>
+      <li class="ss-octocat ss-social">
+        <a href="#"><%= member.github %></a>
+      </li>
+    </ul>
+  </div>
+  <div class="info">
+    <%= member.description %>
+    <p><strong>Areas of Expertise:</strong> <%= member.expertise.join(", ") %></p>
+  </div>
+</li>
