@@ -3,66 +3,65 @@
   topics:
   -
     name: Introductory Ruby (3 Days)
-    topics: 
   -
     name: Intermediate Topics
     topics:
     -
-      name: Test-Driven Development with RSpec (2 Days)
+      Test-Driven Development with RSpec (2 Days)
     -
-      name: RSpec Best Practices (1 Day)
+      RSpec Best Practices (1 Day)
     -
-      name: Ruby Object Systems & Fundamentals (2 Days)
+      Ruby Object Systems & Fundamentals (2 Days)
     -
-      name: Interacting with 3rd Party Services (1 Day)
+      Interacting with 3rd Party Services (1 Day)
   -
     name: Advanced Topics
     topics:
     -
-      name: Performance Analysis and Benchmarking (1 Day)
+      Performance Analysis and Benchmarking (1 Day)
     -
-      name: Creating Native Extensions with C (2 Days)
+      Creating Native Extensions with C (2 Days)
     -
-      name: Creating Gems (1 Day)
+      Creating Gems (1 Day)
 -
   name: Rails
   topics:
   -
-    name: Introductory Rails (3 Days)
+    Introductory Rails (3 Days)
   -
-    name: Intermediate Rails (3 Days)
+    Intermediate Rails (3 Days)
   -
     name: Intermediate Topics
     topics:
     -
-      name: Test Driven Development with RSpec and Rails (2 Days)
+      Test Driven Development with RSpec and Rails (2 Days)
     -
-      name: Modeling RESTful Resources (2 Days)
+      Modeling RESTful Resources (2 Days)
     -
-      name: Adding Processor Objects and Asynchronous Workers (1 Day)
+      Adding Processor Objects and Asynchronous Workers (1 Day)
     -
-      name: Decorator/Presenter and Facade Patterns (2 Days)
+      Decorator/Presenter and Facade Patterns (2 Days)
     -
-      name: Fast Rails Testing (2 Days)
+      Fast Rails Testing (2 Days)
     -
-      name: Integration Testing (2 Days)
+      Integration Testing (2 Days)
   -
     name: Advanced Topics
     topics:
     -
-      name: Rails Performance Analysis (1 Day)
+      Rails Performance Analysis (1 Day)
     -
-      name: Working with NoSQL and Alternative ORMs (2 Days)
+      Working with NoSQL and Alternative ORMs (2 Days)
 -
   name: "JavaScript & Frameworks"
   topics:
   -
-    name: Introduction to JavaScript (2 Days)
+    Introduction to JavaScript (2 Days)
   -
-    name: Introduction to JQuery (2 Days)
+    Introduction to JQuery (2 Days)
   -
-    name: ExtJS Fundamentals (3 Days)
+    ExtJS Fundamentals (3 Days)
   -
-    name: Backbone.js Fundamentals (3 Days)
+    Backbone.js Fundamentals (3 Days)
   -
-    name: JavaScript Testing (2 Days)
+    JavaScript Testing (2 Days)
