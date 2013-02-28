@@ -39,59 +39,10 @@
           <p>Get up to speed quickly. We focus on hands on programming, so you’ll build real applications immediately.</p>
           <p>Our courses are customized to fit the needs of your team, but below are some of the components we offer. <a href="mailto:contact@jumpstartlab.com">Send us an email</a> and we’ll get to work customizing the right content for you.</p>
 
-          <h2 id="ruby">Ruby</h2>
+          <% Course.all.each do |course| %>
+            <%= partial :course, locals: { course: course } %>
+          <% end %>
 
-          <ul class="bulleted-list">
-            <li>Introductory Ruby (3 Days)</li>
-            <li>Intermediate Topics
-              <ul>
-                <li>Test-Driven Development with RSpec (2 Days)</li>
-                <li>RSpec Best Practices (1 Day)</li>
-                <li>Ruby Object Systems &amp; Fundamentals (2 Days)</li>
-                <li>Interacting with 3rd Party Services (1 Day)</li>
-              </ul>
-            </li>
-            <li>Advanced Topics
-              <ul>
-                <li>Performance Analysis and Benchmarking (1 Day)</li>
-                <li>Creating Native Extensions with C (2 Days)</li>
-                <li>Creating Gems (1 Day)</li>
-              </ul>
-            </li>
-          </ul>
-
-          <h2 id="rails">Rails</h2>
-
-          <ul class="bulleted-list">
-            <li>Introductory Rails (3 Days)</li>
-            <li>Intermediate Rails (3 Days)</li>
-            <li>Intermediate Topics
-              <ul>
-                <li>Test Driven Development with RSpec and Rails (2 Days)</li>
-                <li>Modeling RESTful Resources (2 Days)</li>
-                <li>Adding Processor Objects and Asynchronous Workers (1 Day)</li>
-                <li>Decorator/Presenter and Facade Patterns (2 Days)</li>
-                <li>Fast Rails Testing (2 Days)</li>
-                <li>Integration Testing (2 Days)</li>
-              </ul>
-            </li>
-            <li>Advanced Topics
-              <ul>
-                <li>Rails Performance Analysis (1 Day)</li>
-                <li>Working with NoSQL and Alternative ORMs (2 Days)</li>
-              </ul>
-            </li>
-          </ul>
-
-          <h2 id="javascript--frameworks">JavaScript &amp; Frameworks</h2>
-
-          <ul class="bulleted-list">
-            <li>Introduction to JavaScript (2 Days)</li>
-            <li>Introduction to JQuery (2 Days)</li>
-            <li>ExtJS Fundamentals (3 Days)</li>
-            <li>Backbone.js Fundamentals (3 Days)</li>
-            <li>JavaScript Testing (2 Days)</li>
-          </ul>
         </div>
 
         <%= partial :aside %>
