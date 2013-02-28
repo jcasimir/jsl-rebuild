@@ -39,13 +39,13 @@
           <p>JumpstartLab is a small team passionate about technical education.</p>
 
           <ul class="thumb-nav">
-            <li><a href="#jeff"><img src="/images/jeff.jpg" alt="Jeff Casimir"></a></li>
-            <li><a href="#franklin"><img src="/images/franklin.jpg" alt="Franklin Webber"></a></li>
-            <li><a href="#steve"><img src="/images/steve.jpg" alt="Steve Klabnik"></a></li>
-            <li><a href="#nick"><img src="/images/nick.jpg" alt="Nick Guithier"></a></li>
-            <li><a href="#franklin"><img src="/images/franklin.jpg" alt="Franklin Webber"></a></li>
-            <li><a href="#steve"><img src="/images/steve.jpg" alt="Steve Klabnik"></a></li>
-            <li><a href="#nick"><img src="/images/nick.jpg" alt="Nick Guithier"></a></li>
+            <% Team.all.each do |member| %>
+              <li>
+                <a href="#<%= member.nickname %>">
+                  <%= image_tag member.image_url %>
+                </a>
+              </li>
+            <% end %>
           </ul>
 
           <ul class="team">

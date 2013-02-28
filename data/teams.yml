@@ -1,0 +1,32 @@
+-
+  name: Jeff Casimir
+  nickname: jeff
+  image_url: /images/jeff.jpg
+  twitter: j3
+  github: JCasimir
+  description: "I started teaching in 2003 with Teach for America in my native Washington, DC. I first taught middle-school students, then taught Computer Science to high schoolers, and finally helped start a new charter middle school in a role most easily described as “Vice Principal.”"
+  expertise: [ "Ruby", "Rails", "Testing", "jQuery" ]
+-
+  name: Franklin Webber
+  nickname: franklin
+  image_url: /images/franklin.jpg
+  twitter: franklinwebber
+  github: burtlo
+  description: "A college teaching assistant told me once that I was a great software developer and a terrible computer scientist. That meant the software I wrote cared more for the user experience then the size of it’s Big O Notation. My professional experience comes from a testing background where I sought to automate myself out of a job. Bringing me in to software development where I became the resident generalist who was always willing to step up to learn technologies. By far it has been my empathy which has helped me the most in being able to communicate and teach to peers and students."
+  expertise: [ "Ruby", "Rails", "iOS" ]
+-
+  name: Steve Klabnik
+  nickname: steve
+  image_url: /images/steve.jpg
+  twitter: steveklabnik
+  github: steveklabnik
+  description: "I’ve been programming for several years and was always interested in education. Through my work on Hackety-Hack and Shoes, I’ve had the opportunity to help people get in to programming and love it."
+  expertise: [ "Ruby", "Rails", "Testing", "C" ]
+-
+  name: Nick Gauthier
+  nickname: nick
+  image_url: /images/nick.jpg
+  twitter: ngauthier
+  github: ngauthier
+  description: "At Johns Hopkins University I received my bachelor’s and master’s degrees in computer science as well as a second degree black belt in Tae Kwon Do. I taught Tae Kwon Do for a few years while also learning Ruby on Rails, doing web consulting. This unique combination of credentials qualifies me for training actual Rails Ninjas."
+  expertise: [ "Ruby, Rails", "Backbone.js", "JavaScript", "Tae Kwon Do" ]
