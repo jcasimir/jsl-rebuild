@@ -2,6 +2,9 @@
   type: twitter
   info: "@jumpstartlab"
 -
+  type: github
+  info: "jumpstartlab"
+-
   type: email
   info: "contact@jumpstartlab.com"
 -
@@ -12,4 +15,4 @@
   info: "(202) 280–1257"
 -
   type: mail
-  info: "3634 Georgia Ave NW Washington,<br/>DC 20010 U.S.A (<a href='/'Map />Map</a>)"
+  info: "3634 Georgia Ave NW Washington,<br/>DC 20010 U.S.A (<a href='http://goo.gl/maps/7OyZ0'Map />Map</a>)"

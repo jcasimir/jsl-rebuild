@@ -5,7 +5,7 @@
         <dl class="contact-info">
           <% ContactPoint.all.each do |point| %>
             <dt><%= point.type.capitalize %></dt>
-            <dd><%= point.info %></dd>
+            <dd><%= point.tag %></dd>
           <% end %>
         </dl>
       </div>
@@ -18,8 +18,12 @@
           <input type="submit" value="Subscribe" />
         </form>
         <ul>
-          <li class="twitter"><a href="#" class="ss-icon ss-social">Twitter</a></li>
-          <li class="github"><a href="#" class="ss-icon ss-social">GitHubOctocat</a></li>
+          <li class="twitter">
+            <a href="<%= ContactPoint.twitter.url %>" class="ss-icon ss-social">Twitter</a>
+          </li>
+          <li class="github">
+            <a href="<%= ContactPoint.github.url %>" class="ss-icon ss-social">GitHubOctocat</a>
+          </li>
           <li class="rss"><a href="#" class="ss-icon ss-social">RSS</a></li>
         </ul>
       </div>
