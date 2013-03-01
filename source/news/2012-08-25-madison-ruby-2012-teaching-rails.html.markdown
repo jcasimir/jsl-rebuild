@@ -1,5 +1,6 @@
 ---
 title: "Madison Ruby 2012 Panel: Teaching Rails"
+author: jeff
 date: 2012-08-25
 tags:
 ---

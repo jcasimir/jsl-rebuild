@@ -1,5 +1,6 @@
 ---
 title: "Technically Awesome"
+author: jeff
 date: 2012-08-30
 tags:
 content_type: video

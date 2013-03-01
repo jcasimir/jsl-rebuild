@@ -1,5 +1,6 @@
 ---
 title: "WAMU's Kojo Nnamdi \"Tech Tuesday\""
+author: jeff
 date: 2012-01-16
 tags:
 ---

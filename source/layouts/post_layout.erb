@@ -1,0 +1,47 @@
+<% wrap_layout :layout do %>
+  <% author = Team.find_by_name(current_article.data.author) %>
+  <div class="wrapper">
+    <div id="header">
+      <div id="logo">
+        <a href="/"><img alt="Jumpstart Lab" src="/images/logo-bw.png"></a>
+	    </div>
+      <ul id="nav">
+        <li class="active"><a href="news">News</a></li>
+        <li><a href="courses">Courses</a></li>
+        <li><a href="http://tutorials.jumpstartlab.com">Tutorials</a></li>
+        <li><a href="team">Team</a></li>
+        <li><a href="contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="main">
+
+    <div class="wrapper">
+      <div class="section post">
+        <h1><%= current_article.title %></h1>
+        <p class="post-date">
+          Posted <%= current_article.date.strftime('%B %e, %Y') %>
+          by <%= author.name %>
+        </p>
+
+        <%= yield %>
+
+        <div class="post-footer">
+          <%= image_tag author.image_url, alt: author.name %>
+          <p>Posted by <%= author.name %> on <%= current_article.date.strftime("%B %e, %Y") %></p>
+          <p class="ss-twitter ss-social">
+            <%= link_to "@#{author.twitter}", "http://twitter.com/#{author.twitter}"  %>
+          </p>
+        </div>
+        <div class="post-nav">
+          <%= link_to("&lsaquo; Previous", current_article.previous_article, class: "prev") if current_article.previous_article %>
+          <%= link_to("Next &rsaquo;", current_article.next_article, class: "next") if current_article.next_article %>
+        </div>
+      </div>
+
+      <%= partial :aside %>
+    </div>
+
+    <%= partial :footer %>
+<% end %>

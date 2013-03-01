@@ -1,5 +1,6 @@
 ---
 title: "The World is Full of Real People"
+author: jeff
 date: 2012-01-13
 tags:
 ---
