@@ -23,7 +23,7 @@
         <ul id="nav">
           <li><a href="news">News</a></li>
           <li><a href="courses">Courses</a></li>
-          <li><a href="#">Tutorials</a></li>
+          <li><a href="http://tutorials.jumpstartlab.com">Tutorials</a></li>
           <li><a href="team">Team</a></li>
           <li class="active"><a href="contact">Contact</a></li>
         </ul>
@@ -39,7 +39,7 @@
           <dl class="contact-info">
             <% ContactPoint.all.each do |point| %>
               <dt><%= point.type.capitalize %></dt>
-              <dd><%= point.info %></dd>
+              <dd><%= point.tag %></dd>
             <% end %>
               </dl>
           <h2>Send Us A Message <span>and we'll get back to you right away!</span></h2>
