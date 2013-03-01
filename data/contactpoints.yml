@@ -1,12 +1,15 @@
 -
   type: twitter
   info: "@jumpstartlab"
+  url: "http://twitter.com/jumpstartlab"
 -
   type: github
   info: "jumpstartlab"
+  url: "https://github.com/jumpstartlab"
 -
   type: email
   info: "contact@jumpstartlab.com"
+  url: "mailto:contact@jumpstartlab.com"
 -
   type: phone
   info: "(202) 495–0599"

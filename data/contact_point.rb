@@ -13,38 +13,10 @@ class ContactPoint < Middleman::DataModel::SimpleDataModel
   end
 
   def tag
-    info_text_for_type(type)
-  end
-
-  def url
-    info_url_for_type(type)
-  end
-
-  private
-
-  def info_text_for_type(type)
-    if type == "twitter"
-      "<a href='http://twitter.com/#{@info}'>#{@info}</a>"
-
-    elsif type == "github"
-      "<a href='http://github.com/#{@info}'>#{@info}</a>"
-
-    elsif type == "email"
-      "<a href='mailto:#{@info}'>#{@info}</a>"
+    if url
+      "<a href='#{url}'>#{info}</a>"
     else
-      @info
-    end
-  end
-
-  def info_url_for_type(type)
-    if type == "twitter"
-      "http://twitter.com/#{@info}"
-    elsif type == "github"
-      "http://github.com/#{@info}"
-    elsif type == "email"
-      "mailto:#{@info}"
-    else
-      @info
+      info
     end
   end
 
