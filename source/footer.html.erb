@@ -3,14 +3,10 @@
       <div class="contact">
         <h2>Contact Us</h2>
         <dl class="contact-info">
-          <dt>Email:</dt>
-          <dd><a href="mailto:contact@jumpstartlab.com">contact@jumpstartlab.com</a></dd>
-          <dt>Phone:</dt>
-          <dd>(202) 495–0599</dd>
-          <dt>Fax:</dt>
-          <dd>(202) 280–1257</dd>
-          <dt>Mail:</dt>
-          <dd>3634 Georgia Ave NW Washington,<br /> DC 20010 U.S.A. (<a href="/">Map</a>)</dd>
+          <% ContactPoint.all.each do |point| %>
+            <dt><%= point.type.capitalize %></dt>
+            <dd><%= point.info %></dd>
+          <% end %>
         </dl>
       </div>
       <img class="logo-mark" src="/images/logo-mark.png" />
