@@ -1,53 +1,34 @@
-<!doctype html>
-<html lang="en">
-  <head>
-  	<meta charset="utf-8">
-  	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-  	<title>JumpstartLab – We Build Developers</title>
-  	<meta name="description" content="">
-  	<meta name="author" content="">
-  	<link rel="stylesheet" href="/css/styles.css">
-  	<link href="webfonts/ss-social.css" rel="stylesheet" />
-  	<link href="webfonts/ss-standard.css" rel="stylesheet" />
-  	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="//use.typekit.net/tpn0qjo.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-  </head>
-  <body>
+<div class="wrapper">
+  <div id="header">
+    <div id="logo">
+      <a href="/"><img alt="Jumpstart Lab" src="/images/logo-bw.png"></a>
+    </div>
+    <ul id="nav">
+      <li><a href="news">News</a></li>
+      <li class="active"><a href="courses">Courses</a></li>
+      <li><a href="http://tutorials.jumpstartlab.com">Tutorials</a></li>
+      <li><a href="team">Team</a></li>
+      <li><a href="contact">Contact</a></li>
+    </ul>
+  </div>
+</div>
 
-    <div class="wrapper">
-      <div id="header">
-        <div id="logo">
-          <a href="/"><img alt="Jumpstart Lab" src="/images/logo-bw.png"></a>
-		    </div>
-        <ul id="nav">
-          <li><a href="news">News</a></li>
-          <li class="active"><a href="courses">Courses</a></li>
-          <li><a href="http://tutorials.jumpstartlab.com">Tutorials</a></li>
-          <li><a href="team">Team</a></li>
-          <li><a href="contact">Contact</a></li>
-        </ul>
-      </div>
+<div id="main">
+
+  <div class="wrapper">
+    <h1>Courses</h1>
+
+    <div class="section">
+      <p>Get up to speed quickly. We focus on hands on programming, so you’ll build real applications immediately.</p>
+      <p>Our courses are customized to fit the needs of your team, but below are some of the components we offer. <a href="mailto:contact@jumpstartlab.com">Send us an email</a> and we’ll get to work customizing the right content for you.</p>
+
+      <% Course.all.each do |course| %>
+        <%= partial :course, locals: { course: course } %>
+      <% end %>
+
     </div>
 
-    <div id="main">
+    <%= partial :aside %>
+  </div>
 
-      <div class="wrapper">
-        <h1>Courses</h1>
-
-        <div class="section">
-          <p>Get up to speed quickly. We focus on hands on programming, so you’ll build real applications immediately.</p>
-          <p>Our courses are customized to fit the needs of your team, but below are some of the components we offer. <a href="mailto:contact@jumpstartlab.com">Send us an email</a> and we’ll get to work customizing the right content for you.</p>
-
-          <% Course.all.each do |course| %>
-            <%= partial :course, locals: { course: course } %>
-          <% end %>
-
-        </div>
-
-        <%= partial :aside %>
-      </div>
-
-      <%= partial :footer %>
-  </body>
-</html>
+  <%= partial :footer %>

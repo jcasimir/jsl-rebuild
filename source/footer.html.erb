@@ -1,4 +1,4 @@
-<div id="bottom">
+  <div id="bottom">
     <div class="wrapper">
       <div class="contact">
         <h2>Contact Us</h2>
@@ -13,10 +13,9 @@
       <div class="connect">
         <h2>Stay Connected</h2>
         <p>Get the scoop on upcoming classes.</p>
-        <form>
-          <input type="text" placeholder="Your email address" />
-          <input type="submit" value="Subscribe" />
-        </form>
+
+        <%= partial :email_signup %>
+
         <ul>
           <li class="twitter">
             <a href="<%= ContactPoint.twitter.url %>" class="ss-icon ss-social">Twitter</a>
@@ -29,6 +28,8 @@
       </div>
     </div>
   </div>
+
+  <!-- Trailing div here is matched against all the forms including the footer -->
 </div>
 
 <div id="footer">
