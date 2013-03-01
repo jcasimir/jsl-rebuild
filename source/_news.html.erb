@@ -1,15 +1,25 @@
 <div class="news">
   <h2>News</h2>
-  <h3><a href="/">Madison Ruby 2012 Panel: Teaching Rails</a></h3>
-  <img src="/images/teaching-rails.png" alt="Teaching Rails" width="224" height="150">
-  <p>Madison Ruby 2012 Panel Discussion including Chad Pytel, Jeff Casimir, Jeff Cohen, and Stephen Anderson. <a href="/">Read more&nbsp;»</a></p>
-  <p class="time-stamp ss-video">August 25, 2012</p>
+  <% page_articles[0..0].each do |article| %>
+    <h3><%= link_to article.title, article %></h3>
+    <%= article.summary %>
+    <p><%= link_to "Read more&nbsp;»", article %></p>
+
+    <p class="time-stamp ss-<%= article.data.content_type || "file" %>">
+      <%= article.date.strftime('%B %e, %Y') %>
+    </p>
+  <% end %>
+
   <ul>
-    <li><h3><a href="/" class="ss-video">Anti-Oppression 101</a> <span class="time-stamp">Aug 24</span></h3></li>
-    <li><h3><a href="/" class="ss-file">Hungry Academy: Full of Lessons</a> <span class="time-stamp">June 23</span></h3></li>
-    <li><h3><a href="/" class="ss-file">Designing Hypermedia APIs</a> <span class="time-stamp">April 23</span></h3></li>
-    <li><h3><a href="/" class="ss-video">"Ruby can't scale." O RLY?</a> <span class="time-stamp">Feb 05</span></h3></li>
+    <% page_articles[1,4].each do |article| %>
+      <li>
+        <h3>
+          <%= link_to article.title, article, class: "ss-#{article.data.content_type || 'file'}" %>
+          <span class="time-stamp"><%= article.date.strftime('%b %e') %></span>
+        </h3>
+      </li>
+    <% end %>
   </ul>
-  <p><a href="#">View all posts&nbsp;»</a></p>
+  <p><a href="/news">View all posts&nbsp;»</a></p>
 </div>
 
