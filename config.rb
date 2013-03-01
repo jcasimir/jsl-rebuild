@@ -65,6 +65,13 @@ page "humans.txt", layout: false
 
 activate :data_models
 
+set :markdown_engine, :redcarpet
+set :markdown, :fenced_code_blocks => true, :smartypants => true
+
+activate :syntax,
+         :linenos => 'inline',
+         :anchorlinenos => true,
+         :linenostart => 2
 
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
