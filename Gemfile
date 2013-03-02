@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 gem "middleman", "~>3.0.11"
-gem "middleman-data_model", path: "../middleman-data_model"
+gem "middleman-data_model", "0.0.2"
 
 gem "middleman-blog", "~> 3.1.1"
 
