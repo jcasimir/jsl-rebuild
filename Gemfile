@@ -11,3 +11,8 @@ gem "pygments.rb"
 
 gem "builder"
 gem "rack-rewrite"
+gem "rack-contrib"
+
+group 'development' do
+  gem "shotgun"
+end

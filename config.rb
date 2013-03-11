@@ -58,6 +58,7 @@ end
 #
 page "robots.txt", layout: false
 page "humans.txt", layout: false
+page "feed.xml", layout: false
 
 
 ###
