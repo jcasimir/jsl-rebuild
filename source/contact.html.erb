@@ -25,28 +25,6 @@
           <dd><%= point.tag %></dd>
         <% end %>
           </dl>
-      <div id="contact-form">
-        <h2>Send Us A Message <span>and we'll get back to you right away!</span></h2>
-
-        <form id="send_us_a_message_form" method="post" action="/contact/#send_us_a_message_form">
-          <input type="hidden" name="form_id" value="4f4b15f5dabe9d07e4006241">
-          <label for="form_custom_data_your_name_value">Your Name <span class="required">(Required)</span></label>
-          <input id="form_custom_data_your_name_value" name="form[custom_data][your_name][value]" type="text">
-          <label for="form_custom_data_your_email_value">Your Email <span class="required">(Required)</span></label>
-          <input id="form_custom_data_your_email_value" name="form[custom_data][your_email][value]" type="text">
-          <label for="form_custom_data_your_message_value">Your Message <span class="required">(Required)</span></label>
-          <textarea cols="60" id="form_custom_data_your_message_value" name="form[custom_data][your_message][value]" rows="4"></textarea>
-          <input type="submit" value="Submit">
-        </form>
-        <script type="text/javascript">
-          var send_us_a_message_form_javascript_field = document.createElement("input");
-          send_us_a_message_form_javascript_field.type = "hidden";
-          send_us_a_message_form_javascript_field.name = "form[javascript]";
-          send_us_a_message_form_javascript_field.value = "true";
-          document.getElementById("send_us_a_message_form").appendChild(send_us_a_message_form_javascript_field);
-        </script>
-      </div>
-
     </div>
 
     <%= partial :aside %>
