@@ -732,6 +732,17 @@ input[type="submit"]:hover, .btn a:hover {
 .section input[type="text"] {clear: left;}
 
 
+table td, table th {
+  padding: 8px; }
+table th {
+  background: #4F5256;
+  color: #FFAE00;
+  text-shadow: none;
+  border: 1px solid #FFAE00; }
+table.centered {
+  margin: 0px auto;
+  text-align: center; }
+
 .jcarousel-direction-rtl {
   direction: rtl; }
 
