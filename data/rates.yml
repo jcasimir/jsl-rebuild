@@ -1,0 +1,8 @@
+-
+  name: "United States"
+  daily: "4000 USD"
+  additional_per_day: "250 USD"
+-
+  name: "International"
+  daily: "5000 USD"
+  additional_per_day: "250 USD"

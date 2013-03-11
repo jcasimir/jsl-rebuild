@@ -1,0 +1,15 @@
+<h2 id="ruby"><%= course.name %></h2>
+
+<ul class="bulleted-list">
+  <% course.topics.each do |topic| %>
+    <li><%= topic.name %>
+      <% if topic.has_topics? %>
+        <ul>
+          <% topic.topics.each do |subtopic| %>
+            <li><%= subtopic.name %></li>
+          <% end %>
+        </ul>
+      <% end %>
+    </li>
+  <% end %>
+</ul>

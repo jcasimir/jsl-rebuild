@@ -1,0 +1,17 @@
+<div class="events">
+  <h2>Upcoming Events</h2>
+
+    <ul class="pill-selector">
+      <li class="active"><a href="#">All</a></li>
+      <li><a href="#">Our Classes</a></li>
+      <li><a href="#">Conferences</a></li>
+    </ul>
+
+    <% Event.all.each do |event| %>
+      <ul class="events-list">
+        <li class="vevent">
+          <%= partial :event, locals: { event: event } %>
+        </li>
+      </ul>
+  <% end %>
+</div>

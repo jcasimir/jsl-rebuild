@@ -1,0 +1,11 @@
+<div class="aside">
+  <img src="/images/banner-sidebar.png" alt="banner_sidebar" width="220" height="220">
+  <h2>Upcoming Events</h2>
+  <% Event.all.each do |event| %>
+    <ul class="events-list">
+      <li class="vevent">
+        <%= partial :event, locals: { event: event } %>
+      </li>
+    </ul>
+  <% end %>
+</div>

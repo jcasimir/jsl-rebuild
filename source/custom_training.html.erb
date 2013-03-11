@@ -1,0 +1,65 @@
+<div class="wrapper">
+  <div id="header">
+    <div id="logo">
+      <a href="/"><img alt="Jumpstart Lab" src="/images/logo-bw.png"></a>
+    </div>
+    <ul id="nav">
+      <li><a href="news">News</a></li>
+      <li><a href="courses">Courses</a></li>
+      <li><a href="http://tutorials.jumpstartlab.com">Tutorials</a></li>
+      <li><a href="team">Team</a></li>
+      <li><a href="contact">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+<div id="main">
+
+  <div class="wrapper">
+    <h1>Custom Training</h1>
+
+    <div class="section">
+      <p>Custom training is available anywhere in the world. We offer any of our
+      existing classes on Ruby, Rails, SQL, or Web Design and will customize
+      the curriculum to meet your needs.</p>
+
+      <h3 id="pricing">Pricing</h3>
+
+      <p>Pricing is based on the days of instruction and the number of attendees
+      in the course. The “Daily Rate” covers the <strong>first six attendees</strong>.</p>
+
+      <table class="centered">
+        <tbody>
+          <tr>
+            <td>&nbsp;</td>
+            <th>Daily Rate<br>6 Attendees</th>
+            <th>Additional Attendee<br>per Day</th>
+          </tr>
+          <% Rate.all.each do |rate| %>
+            <tr>
+              <th><%= rate.name %></th>
+              <td><%= rate.daily %></td>
+              <td><%= rate.additional_per_day %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+
+      <br/>
+
+      <p>Outside the Denver, CO area, there will be an additional cost for
+      travel.</p>
+
+      <p>You can preview availability on the calendar below. If you see dates
+      that look good, please <a href="mailto:contact@jumpstartlab.com">email contact@jumpstartlab.com</a>
+      to make the arrangements and answer any questions you may have.</p>
+
+      <iframe src="https://www.google.com/calendar/hosted/casimircreative.com/embed?height=500&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=casimircreative.com_vfcvc1q4d4jbambjmra7eusrsk%40group.calendar.google.com&amp;color=%230D7813&amp;ctz=America%2FNew_York" style="border: 4px solid #FFF;" width="580" height="620" frameborder="0" scrolling="no" id="gcal_frame">
+      </iframe>
+
+    </div>
+
+    <%= partial :aside %>
+  </div>
+
+  <%= partial :footer %>

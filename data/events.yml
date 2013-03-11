@@ -1,0 +1,41 @@
+-
+  :title: Denver Rubyconf 2012
+  :url:
+  :type: conference
+  :image_url: /images/event-rubyconf.png
+  :location: Grand Hyatt Denver
+  :location_url:
+  :details: "November 1-3 - Denver, CO"
+-
+  :title: RubyConf Argentina 2012
+  :url:
+  :image_url: /images/event-rubyconf-arg.png
+  :type: conference
+  :location: Paseo La Plaza
+  :location_url:
+  :details: "October 19-20 - Buenos Aires, Argentina"
+-
+  :title: Ruby DCamp 2012
+  :url: 
+  :image_url: /images/event-rubydccamp.png
+  :type: conference
+  :location: Prince William National Forest Park
+  :location_url:
+  :details: "September 28-30 - Triangle, VA"
+-
+  :title: Aloha Ruby 2012
+  :url:
+  :type: conference
+  :image_url: /images/event-aloharuby.png
+  :location: Aloha Ruby 2012
+  :location_url:
+  :details: "October 6-9 - Honolulu, HI"
+-
+  :title: "Introduction to Ruby & Rails"
+  :url:
+  :type: conference
+  :image_url: /images/event-jumpstart.png
+  :location: LARubyConf 2012
+  :location_url:
+  :details: "February 2 - Burbank, CA"
+  :tickets_url: http://google.com

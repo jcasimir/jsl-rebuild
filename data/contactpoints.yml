@@ -1,0 +1,21 @@
+-
+  type: twitter
+  info: "@jumpstartlab"
+  url: "http://twitter.com/jumpstartlab"
+-
+  type: github
+  info: "jumpstartlab"
+  url: "https://github.com/jumpstartlab"
+-
+  type: email
+  info: "contact@jumpstartlab.com"
+  url: "mailto:contact@jumpstartlab.com"
+-
+  type: phone
+  info: "(202) 495–0599"
+-
+  type: fax
+  info: "(202) 280–1257"
+-
+  type: mail
+  info: "1062 Delaware Street Denver, CO 80204 U.S.A (<a href='http://goo.gl/maps/tJZCF'Map />Map</a>)"

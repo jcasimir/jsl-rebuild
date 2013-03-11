@@ -1,0 +1,46 @@
+<div class="wrapper">
+  <div id="header">
+    <div id="logo">
+      <a href="/"><img alt="Jumpstart Lab" src="/images/logo-bw.png"></a>
+    </div>
+    <ul id="nav">
+      <li><a href="news">News</a></li>
+      <li><a href="courses">Courses</a></li>
+      <li><a href="http://tutorials.jumpstartlab.com">Tutorials</a></li>
+      <li><a href="team">Team</a></li>
+      <li><a href="contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <div class="top">
+    <a class="video" href="/">
+      <i class="ss-play"></i>
+      <p><span>Play video</span></p>
+    </a>
+
+    <div class="intro">
+      <h1>We Build Developers</h1>
+      <p>JumpstartLab offers the best web development training anywhere. We’re known for our expertise in Ruby on Rails, but also instruct courses in jQuery, JavaScript, ExtJS, and Git.</p>
+      <p>For companies and teams, we offer <a href="/custom_training">custom training</a> anywhere from two days to six months.</p>
+      <p class="btn"><a href="/courses" class="ss-navigateright right">Learn more</a></p>
+    </div>
+
+    <img class="guarantee" src="/images/illustration-stamp.png" />
+  </div>
+</div>
+
+<div id="main">
+
+  <div class="wrapper">
+
+    <%= partial :testimonials %>
+
+    <%= partial :news %>
+
+    <%= partial :events %>
+
+    <%= partial :customers %>
+
+  </div>
+
+  <%= partial :footer %>

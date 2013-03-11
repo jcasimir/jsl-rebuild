@@ -1,0 +1,46 @@
+  <div id="bottom">
+    <div class="wrapper">
+      <div class="contact">
+        <h2>Contact Us</h2>
+        <dl class="contact-info">
+          <% ContactPoint.all.each do |point| %>
+            <dt><%= point.type.capitalize %></dt>
+            <dd><%= point.tag %></dd>
+          <% end %>
+        </dl>
+      </div>
+      <img class="logo-mark" src="/images/logo-mark.png" />
+      <div class="connect">
+        <h2>Stay Connected</h2>
+        <p>Get the scoop on upcoming classes.</p>
+
+        <%= partial :email_signup %>
+
+        <ul>
+          <li class="twitter">
+            <a href="<%= ContactPoint.twitter.url %>" class="ss-icon ss-social">Twitter</a>
+          </li>
+          <li class="github">
+            <a href="<%= ContactPoint.github.url %>" class="ss-icon ss-social">GitHubOctocat</a>
+          </li>
+          <li class="rss"><a href="#" class="ss-icon ss-social">RSS</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Trailing div here is matched against all the forms including the footer -->
+</div>
+
+<div id="footer">
+  <div class="wrapper">
+    <ul class="footer-nav">
+      <li><a href="/news">News</a></li>
+      <li><a href="/courses">Courses</a></li>
+      <li><a href="http://tutorials.jumpstartlab.com">Tutorials</a></li>
+      <li><a href="/team">Team</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+    <p>Content © Casimir Creative, LLC except where licensed otherwise.</p>
+  </div>
+</div>

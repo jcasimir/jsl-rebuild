@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+
+    <title><%= data.page.title || "JumpstartLab – We Build Developers" %></title>
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <%= stylesheet_link_tag "normalize", "all", "styles" %>
+
+    <link href="/webfonts/ss-social.css" rel="stylesheet" />
+    <link href="/webfonts/ss-standard.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
+
+    <%= javascript_include_tag  "all" %>
+    <script type="text/javascript" src="//use.typekit.net/tpn0qjo.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+  </head>
+
+  <body>
+    <%= yield %>
+
+  </body>
+</html>
