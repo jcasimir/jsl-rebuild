@@ -24,3 +24,7 @@ end
 get "/contact" do
   erb :contact
 end
+
+get "/heroku" do
+  erb :heroku
+end
