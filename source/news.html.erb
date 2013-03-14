@@ -1,0 +1,44 @@
+<div class="wrapper">
+  <div id="header">
+    <div id="logo">
+      <a href="/"><img alt="Jumpstart Lab" src="/images/logo-bw.png"></a>
+    </div>
+    <ul id="nav">
+      <li class="active"><a href="news">News</a></li>
+      <li><a href="courses">Courses</a></li>
+      <li><a href="http://tutorials.jumpstartlab.com">Tutorials</a></li>
+      <li><a href="team">Team</a></li>
+      <li><a href="contact">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+<div id="main">
+
+  <div class="wrapper">
+    <h1>News</h1>
+
+    <div class="section">
+      <ul class="pill-selector">
+        <li class="active"><a href="#">All</a></li>
+        <li><a href="#">Writings</a></li>
+        <li><a href="#">Conference Talks</a></li>
+      </ul>
+
+      <ul class="posts">
+        <% page_articles.each_with_index do |article, i| %>
+          <li>
+            <h2><%= link_to article.title, article %></h2>
+            <p class="post-date ss-calendar">Posted <%= article.date.strftime('%B %e, %Y') %></p>
+            <%= article.summary %>
+            <p><%= link_to "Read more&nbsp;»", article %></p>
+          </li>
+        <% end %>
+      </ul>
+      <p class="subscribe ss-rss"><a href="#">Subscribe to RSS</a></p>
+    </div>
+
+    <%= partial :aside %>
+  </div>
+
+  <%= partial :footer %>

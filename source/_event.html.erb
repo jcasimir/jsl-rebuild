@@ -1,0 +1,21 @@
+<% if event.image? %>
+  <div class="img">
+    <%= tag :img, src: event.image_url, alt: event.title %>
+  </div>
+<% end %>
+<div>
+  <h3><%= link_to event.title, event.url %></h3>
+  <p class="location">
+    <%= link_to event.location, event.location_url %>
+  </p>
+  <p class="details">
+    <%= event.details %>
+  </p>
+  <% if event.tickets? %>
+    <p class="tickets">
+      <span>
+        <%= link_to "Buy Tickets &rsaquo;", event.tickets_url %>
+      </span>
+    </p>
+  <% end %>
+</div>

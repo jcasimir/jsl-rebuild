@@ -1,0 +1,161 @@
+-
+  :title: RuPy 2013
+  :url:
+  :type: conference
+  :image_url: 
+  :location: 
+  :location_url:
+  :details: "October 11-14 - Budapest, Hungary"
+-
+  :title: GoGaRuCo 2013
+  :url:
+  :type: conference
+  :image_url: 
+  :location: Mission Bay Conference Center
+  :location_url:
+  :details: "September 20 & 21 - San Francisco, California"
+-
+  :title: BaRuCo 2013
+  :url:
+  :type: conference
+  :image_url: 
+  :location: 
+  :location_url:
+  :details: "September 14 & 15 - Barcelona, Spain"
+-
+  :title: Madison Ruby Conference 2013
+  :url:
+  :type: conference
+  :image_url: 
+  :location: Overture Center for the Arts 
+  :location_url:
+  :details: "August 23 & 24 - Madison, Wisconsin"
+-
+  :title: Burlington Ruby Conference 2013
+  :url:
+  :type: conference
+  :image_url: 
+  :location: 
+  :location_url:
+  :details: "August 3 & 4 - Burlington, Vermont"
+-
+  :title: RubyConf India 2013
+  :url:
+  :type: conference
+  :image_url: 
+  :location: Hyatt Regency Pune
+  :location_url:
+  :details: "June 22 & 23 - Pune, India"
+-
+  :title: RubyNation 2013
+  :url:
+  :type: conference
+  :image_url: 
+  :location: 
+  :location_url:
+  :details: "June 14 & 15 - Washington, D.C."
+-
+  :title: RedDotRubyConf 2013
+  :url:
+  :type: conference
+  :image_url: 
+  :location: Matrix (Biopolois)
+  :location_url:
+  :details: "June 7 & 8 - Singapore"
+-
+  :title: NordicRuby 2013 
+  :url:
+  :type: conference
+  :image_url: 
+  :location: Yasuragi Hasseludden
+  :location_url:
+  :details: "June 6-9 - Stockholm, Sweden"
+-
+  :title: Scottish Ruby Conf 2013 
+  :url:
+  :type: conference
+  :image_url: 
+  :location: Crieff Hydro
+  :location_url:
+  :details: "May 12 & 13 - Perthshire, Scotland"
+-
+  :title: La Conf 2013 
+  :url:
+  :type: conference
+  :image_url: 
+  :location: Westin Paris Vendome
+  :location_url:
+  :details: "May 9 & 10 - Paris, France"
+-
+  :title: RailsConf 2013
+  :url:
+  :type: conference
+  :image_url: 
+  :location: Oregon Convention Center
+  :location_url:
+  :details: "April 29 - May 2 - Portland, Oregon"
+-
+  :title: Railsberry 2013 
+  :url:
+  :type: conference
+  :image_url: 
+  :location: The Old Tram Depot (Stara Zajezdnia)
+  :location_url:
+  :details: "April 22 & 23 - Krakow, Poland"
+-
+  :title: LessConf 2013 
+  :url:
+  :type: conference
+  :image_url: 
+  :location: 
+  :location_url:
+  :details: "April 11-13 Panama City Beach, Florida"
+-
+  :title: Ruby MidWest 2013 
+  :url:
+  :type: conference
+  :image_url: 
+  :location: Town Pavilion Conference Center
+  :location_url:
+  :details: "April 5 & 6 - Kansas City, Missouri"
+-
+  :title: Denver Rubyconf 2012
+  :url:
+  :type: conference
+  :image_url: /images/event-rubyconf.png
+  :location: Grand Hyatt Denver
+  :location_url:
+  :details: "November 1-3 - Denver, CO"
+-
+  :title: RubyConf Argentina 2012
+  :url:
+  :image_url: /images/event-rubyconf-arg.png
+  :type: conference
+  :location: Paseo La Plaza
+  :location_url:
+  :details: "October 19-20 - Buenos Aires, Argentina"
+-
+  :title: Ruby DCamp 2012
+  :url: 
+  :image_url: /images/event-rubydccamp.png
+  :type: conference
+  :location: Prince William National Forest Park
+  :location_url:
+  :details: "September 28-30 - Triangle, VA"
+-
+  :title: Aloha Ruby 2012
+  :url:
+  :type: conference
+  :image_url: /images/event-aloharuby.png
+  :location: Aloha Ruby 2012
+  :location_url:
+  :details: "October 6-9 - Honolulu, HI"
+-
+  :title: "Introduction to Ruby & Rails"
+  :url:
+  :type: conference
+  :image_url: /images/event-jumpstart.png
+  :location: LARubyConf 2012
+  :location_url:
+  :details: "February 2 - Burbank, CA"
+  :tickets_url: http://google.com

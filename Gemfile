@@ -1,7 +1,16 @@
-source :rubygems
+source "https://rubygems.org"
 
-gem 'sinatra'
+gem "middleman", "~>3.0.11"
+gem "middleman-data_model", "0.0.2"
 
-group :development do
-  gem 'heroku'
-end
+gem "middleman-blog", "~> 3.1.1"
+
+gem "middleman-syntax"
+gem "redcarpet"
+gem "pygments.rb"
+
+gem "builder"
+gem "rack-rewrite"
+gem "rack-contrib"
+
+gem "shotgun"

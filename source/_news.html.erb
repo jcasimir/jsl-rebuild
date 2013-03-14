@@ -1,0 +1,25 @@
+<div class="news">
+  <h2>News</h2>
+  <% page_articles[0..0].each do |article| %>
+    <h3><%= link_to article.title, article %></h3>
+    <%= article.summary %>
+    <p><%= link_to "Read more&nbsp;»", article %></p>
+
+    <p class="time-stamp ss-<%= article.data.content_type || "file" %>">
+      <%= article.date.strftime('%B %e, %Y') %>
+    </p>
+  <% end %>
+
+  <ul>
+    <% page_articles[1,4].each do |article| %>
+      <li>
+        <h3>
+          <%= link_to article.title, article, class: "ss-#{article.data.content_type || 'file'}" %>
+          <span class="time-stamp"><%= article.date.strftime('%b %e') %></span>
+        </h3>
+      </li>
+    <% end %>
+  </ul>
+  <p><a href="/news">View all posts&nbsp;»</a></p>
+</div>
+

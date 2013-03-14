@@ -1,0 +1,11 @@
+<div class="customers">
+
+  <ul id="mycarousel">
+    <% Customer.all.each do |customer| %>
+      <li>
+        <%= image_tag customer.image_url, alt: customer.organization %>
+      </li>
+    <% end %>
+  </ul>
+
+</div>

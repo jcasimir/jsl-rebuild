@@ -1,0 +1,13 @@
+<div class="testimonials">
+  <% Testimonial.all.each_with_index do |testimonial,index| %>
+    <div class="quote <%= index % 2 == 1 ? 'last' : '' %>">
+      <%= image_tag testimonial.image_url, alt: testimonial.author %>
+      <blockquote>
+        <p>”<%= testimonial.text %>”</p>
+        <span>— <%= testimonial.author %>, 
+          <%= link_to testimonial.organization, testimonial.organization_url %>
+        </span>
+      </blockquote>
+      </div>
+  <% end %>
+</div>

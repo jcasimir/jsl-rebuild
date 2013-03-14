@@ -1,0 +1,33 @@
+<div class="wrapper">
+  <div id="header">
+    <div id="logo">
+      <a href="/"><img alt="Jumpstart Lab" src="/images/logo-bw.png"></a>
+    </div>
+    <ul id="nav">
+      <li><a href="news">News</a></li>
+      <li><a href="courses">Courses</a></li>
+      <li><a href="http://tutorials.jumpstartlab.com">Tutorials</a></li>
+      <li><a href="team">Team</a></li>
+      <li class="active"><a href="contact">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+<div id="main">
+
+  <div class="wrapper">
+    <h1>Contact Us</h1>
+
+    <div class="section">
+      <dl class="contact-info">
+        <% ContactPoint.all.each do |point| %>
+          <dt><%= point.type.capitalize %></dt>
+          <dd><%= point.tag %></dd>
+        <% end %>
+          </dl>
+    </div>
+
+    <%= partial :aside %>
+  </div>
+
+  <%= partial :footer %>

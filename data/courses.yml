@@ -1,0 +1,67 @@
+-
+  name: Ruby
+  topics:
+  -
+    Introductory Ruby (3 Days)
+  -
+    name: Intermediate Topics
+    topics:
+    -
+      Test-Driven Development with RSpec (2 Days)
+    -
+      RSpec Best Practices (1 Day)
+    -
+      Ruby Object Systems & Fundamentals (2 Days)
+    -
+      Interacting with 3rd Party Services (1 Day)
+  -
+    name: Advanced Topics
+    topics:
+    -
+      Performance Analysis and Benchmarking (1 Day)
+    -
+      Creating Native Extensions with C (2 Days)
+    -
+      Creating Gems (1 Day)
+-
+  name: Rails
+  topics:
+  -
+    Introductory Rails (3 Days)
+  -
+    Intermediate Rails (3 Days)
+  -
+    name: Intermediate Topics
+    topics:
+    -
+      Test Driven Development with RSpec and Rails (2 Days)
+    -
+      Modeling RESTful Resources (2 Days)
+    -
+      Adding Processor Objects and Asynchronous Workers (1 Day)
+    -
+      Decorator/Presenter and Facade Patterns (2 Days)
+    -
+      Fast Rails Testing (2 Days)
+    -
+      Integration Testing (2 Days)
+  -
+    name: Advanced Topics
+    topics:
+    -
+      Rails Performance Analysis (1 Day)
+    -
+      Working with NoSQL and Alternative ORMs (2 Days)
+-
+  name: "JavaScript & Frameworks"
+  topics:
+  -
+    Introduction to JavaScript (2 Days)
+  -
+    Introduction to JQuery (2 Days)
+  -
+    ExtJS Fundamentals (3 Days)
+  -
+    Backbone.js Fundamentals (3 Days)
+  -
+    JavaScript Testing (2 Days)
