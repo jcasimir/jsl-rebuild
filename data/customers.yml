@@ -3,35 +3,11 @@
   :organization_url:
   :image_url: /images/customer-livingsocial.png
 -
-  :organization: NASA
+  :organization: Heroku
   :organization_url:
-  :image_url: /images/customer-nasa.png
--
-  :organization: Boeing
-  :organization_url:
-  :image_url: /images/customer-boeing.png
--
-  :organization: Sony
-  :organization_url:
-  :image_url: /images/customer-sony.png
--
-  :organization: Accenture
-  :organization_url:
-  :image_url: /images/customer-accenture.png
--
-  :organization: ATTI
-  :organization_url:
-  :image_url: 
+  :image_url:
 -
   :organization: Blue Box Group
-  :organization_url:
-  :image_url: 
--
-  :organization: Booz Allen Hamilton
-  :organization_url:
-  :image_url: 
--
-  :organization: U.S. Central Intelligence Agency
   :organization_url:
   :image_url: 
 -
@@ -39,50 +15,6 @@
   :organization_url:
   :image_url: 
 -
-  :organization: U.S. Department of Energy
-  :organization_url:
-  :image_url: 
--
-  :organization: eBankSystems
-  :organization_url:
-  :image_url: 
--
-  :organization: Getty Images
-  :organization_url:
-  :image_url: 
--
-  :organization: KEYW Corporation
-  :organization_url:
-  :image_url: 
--
-  :organization: Hewlett-Packard
-  :organization_url:
-  :image_url: 
--
-  :organization: NewRelic
-  :organization_url:
-  :image_url: 
--
-  :organization: OC Tanner
-  :organization_url:
-  :image_url: 
--
-  :organization: Omgeo
-  :organization_url:
-  :image_url: 
--
-  :organization: Simon Fraser University
-  :organization_url:
-  :image_url: 
--
-  :organization: Spectrum Training Brokers
-  :organization_url:
-  :image_url: 
--
-  :organization: Tolingo
-  :organization_url:
-  :image_url: 
--
-  :organization: Vivisimo
+  :organization: Galvanize
   :organization_url:
   :image_url: 
