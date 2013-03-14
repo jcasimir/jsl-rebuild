@@ -87,6 +87,14 @@
   :location_url:
   :details: "May 9 & 10 - Paris, France"
 -
+  :title: RailsConf 2013
+  :url:
+  :type: conference
+  :image_url: 
+  :location: Oregon Convention Center
+  :location_url:
+  :details: "April 29 - May 2 - Portland, Oregon"
+-
   :title: Railsberry 2013 
   :url:
   :type: conference
